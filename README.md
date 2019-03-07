@@ -5,6 +5,7 @@ Removes the Twitch Discover button
 
 ## Requirements
 A userscript extension such as TamperMonkey.
+
 [Firefox Extension Store](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)  
 [Chrome Webstore](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitch Remove Discover Link
 // @namespace    https://www
-// @version      1.0
+// @version      2.0
 // @description  Remove the discover link on Twitch
 // @author       Mark Harvey
 // @match        https://www.twitch.tv/*
@@ -11,8 +11,15 @@
 // @downloadURL     https://github.com/crimsonfalconer/Userscript_TwitchRemoveDiscover/raw/master/TwitchRemoveDiscover.user.js
 // ==/UserScript==
 
+function removeDiscover() {
+	$('[data-a-target="discover-link"]').remove();
+}
+
 (function() {
     'use strict';
-    $('[data-a-target="discover-link"]').remove();
-    // Your code here...
+    removeDiscover();
+	
+	$( window ).on( "load", function() {
+	    removeDiscover();
+	});
 })();
